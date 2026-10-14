@@ -1,0 +1,34 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "errors": 0,
+  "exit_code": 0,
+  "failures": 0,
+  "isolated_browser_smoke": {
+    "checks": [
+      "Provider failure fixture retried via UI in explicitly selected reference mode; version increased and other case remained.",
+      "Escaped unverified model explanation started collapsed and stayed open across refresh.",
+      "390px browser viewport had no horizontal overflow; no JavaScript errors."
+    ],
+    "completed_at_utc": "2026-10-14T05:02:20.226536+00:00",
+    "result": "PASS",
+    "scope": "Isolated temporary sandbox databases. Provider failure/success were test fixtures, not live model evaluations."
+  },
+  "output": "test_actual_post_commit_crash_reconciles_without_second_write (test_resolution.ResolutionTests.test_actual_post_commit_crash_reconciles_without_second_write) ... ok\ntest_changed_source_invalidates_old_approval (test_resolution.ResolutionTests.test_changed_source_invalidates_old_approval) ... ok\ntest_checker_rejects_wrong_amount_duplicate_and_wrong_dispatch (test_resolution.ResolutionTests.test_checker_rejects_wrong_amount_duplicate_and_wrong_dispatch) ... ok\ntest_complaint_instructions_cannot_authorize_conflicting_refund (test_resolution.ResolutionTests.test_complaint_instructions_cannot_authorize_conflicting_refund) ... ok\ntest_duplicate_payment_refund_exact_excess_not_entire_payment (test_resolution.ResolutionTests.test_duplicate_payment_refund_exact_excess_not_entire_payment) ... ok\ntest_failed_model_can_explicitly_retry_with_fresh_sources_and_no_fallback (test_resolution.ResolutionTests.test_failed_model_can_explicitly_retry_with_fresh_sources_and_no_fallback) ... ok\ntest_failed_model_can_retry_live_without_weakening_policy (test_resolution.ResolutionTests.test_failed_model_can_retry_live_without_weakening_policy) ... ok\ntest_locked_source_recheck_prevents_time_of_check_write_gap (test_resolution.ResolutionTests.test_locked_source_recheck_prevents_time_of_check_write_gap) ... ok\ntest_missing_authoritative_source_makes_the_separate_check_fail_closed (test_resolution.ResolutionTests.test_missing_authoritative_source_makes_the_separate_check_fail_closed) ... ok\ntest_prior_refund_is_deducted_from_the_remaining_excess (test_resolution.ResolutionTests.test_prior_refund_is_deducted_from_the_remaining_excess) ... ok\ntest_replacement_requires_exact_approval_and_dispatch (test_resolution.ResolutionTests.test_replacement_requires_exact_approval_and_dispatch) ... ok\ntest_reset_refuses_an_active_job_and_reseeds_idle_world (test_resolution.ResolutionTests.test_reset_refuses_an_active_job_and_reseeds_idle_world) ... ok\ntest_retry_refuses_executed_or_non_model_blocked_case (test_resolution.ResolutionTests.test_retry_refuses_executed_or_non_model_blocked_case) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.452s\n\nOK\n",
+  "python_version": "3.14.7",
+  "recorded_at_utc": "2026-10-14T05:02:20.226536+00:00",
+  "scope": "Configured synthetic customer-resolution scenarios; no model quality or throughput claim",
+  "source_sha256": {
+    "appcore.py": "9097f45a41eb378800f5bbddda79c3560f83e17d85fa583f483939209f0b9cab",
+    "checker.py": "12840ed8559d177e1af7fcf5a019cdf378d990605e9e2e16e5bad509e0a2ff7a",
+    "run.py": "978446f7c3b30346c59658fd5e8b586410953ce9e8310b0de4031f893b9e2d0f",
+    "web/app.js": "215a4bb5f63840bd9f26d69ccfc1310c1cd7c5f75fbd1126d99b6ed6908801d3",
+    "web/index.html": "4decf832d45d4ed525dc2dc1c9f548a745230eaf33e80a4860bf36bd07f9baa8",
+    "web/style.css": "11fe25ee8b55c5ff217413128e5850d7fdb24186a0f902799f918c83b37ca138"
+  },
+  "status": "PASS",
+  "test_sha256": {
+    "tests/test_resolution.py": "f380cfc0c70a58dab63900c42a24d08182fd375931f0e8dd6d9595fa25d63d1d"
+  },
+  "tests": 13,
+  "wall_seconds": 0.654
+}
